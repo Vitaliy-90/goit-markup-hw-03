@@ -238,6 +238,8 @@ img {
 }
 
 .team-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
     background-color: var(--hero-color);
 }
@@ -254,7 +256,7 @@ img {
 }
 
 .team-subtitle {
-    padding-top: 32px;
+
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -264,7 +266,7 @@ img {
 }
 
 .team-text {
-    padding-bottom: 32px;
+
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
@@ -275,7 +277,7 @@ img {
 .footer>.container {
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-right: auto;
+
 
 }
 
@@ -299,7 +301,7 @@ img {
 }
 
 .footer-text {
-    padding-top: 16px;
+    margin-top: 16px;
     max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
@@ -309,7 +311,7 @@ img {
 /* Porfolio.html */
 .portfolio-list {
 
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     display: flex;
     justify-content: center;
     gap: 24px;
