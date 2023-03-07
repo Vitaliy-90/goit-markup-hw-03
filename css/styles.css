@@ -128,10 +128,16 @@ img {
 
 /*Hero  */
 .hero {
-    background-color: var(--primary-color);
+
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/peopleoffice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -159,6 +165,10 @@ img {
     cursor: pointer;
 }
 
+.hero-btn:is(:hover, :focus) {
+    background-color: var(--background-btn);
+}
+
 /* advantages */
 .advantages {
     padding-top: 120px;
@@ -171,7 +181,8 @@ img {
 }
 
 .advantages-item {
-    width: calc((100% - 72px) / 4);
+    min-width: 264px;
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .visually-hidden {
@@ -200,6 +211,28 @@ img {
     line-height: 1.5;
     color: var(--secondary-color);
 }
+
+
+
+.advantages-icon-list {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
+.advantages-icon {}
 
 /* What are we doing */
 .works {
@@ -234,7 +267,11 @@ img {
     display: flex;
     width: calc((100% - 72px) / 4);
     gap: 24px;
+}
 
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-description {
@@ -266,24 +303,95 @@ img {
 }
 
 .team-text {
-
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
 }
 
+.team-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--background-btn);
+}
+
+/* Customers */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.customers-icon {
+    fill: #8E8F99;
+}
+
+.customers-item:is(:hover, :focus) {
+    border-color: var(--background-btn);
+}
+
+
+
+.customers-item:is(:hover, :focus) .customers-icon {
+    fill: currentColor;
+}
 
 /* footer */
-.footer>.container {
+.footer {
     padding-top: 100px;
     padding-bottom: 100px;
-
-
-}
-
-.footer {
     background: var(--primary-color);
 }
+
 
 .footer-logo {
     text-decoration: none;
@@ -307,6 +415,54 @@ img {
     line-height: 1.5;
     color: var(--footer-color);
 }
+
+.footer-social-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--hero-color);
+}
+
+.footer-conctainer {
+    display: flex;
+}
+
+.footer-social {
+    margin-left: 120px;
+    /* max-width: 208px; */
+
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.footer-social-link:is(:hover, :focus) {
+    background-color: #31D0AA;
+}
+
+
+
 
 /* Porfolio.html */
 .portfolio-list {
@@ -378,4 +534,8 @@ img {
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
+}
+
+.gallery-link {
+    text-decoration: none;
 }
